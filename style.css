@@ -1,5 +1,5 @@
 body{
-    background: gray;
+    background: black;
     margin: 0px;
 }
 
@@ -13,26 +13,61 @@ header h1{
 div.post{
     background-color: white;
     margin-top: 10px;
+    font-family: "Roboto", serif;
 }
 div.post img{
     width: 100%;
     border-color: aquamarine;
 }
+div.post .postHeader{
+    display:flex;
+    height: 50px;
+}
+div.post .postHeader p{
+    margin: 0px;
+    font-size: small;
+}
 div.post .postHeader div:first-child{
     display: inline-block;
-    width: 80%;
-    background-color: red;
+    width: 5%;
+    font-size: 1.5em;
+    padding: 10px 0px 10px 10px;
 }
+div.post .postHeader div:nth-child(2){
+    display: inline-block;
+    width: 85%;
+    padding-top: 8px;
+    padding-left: 2px;
+}
+
 div.post .postHeader div:last-child{
     display: inline-block;
-    width: 16%;
-    background-color: yellow;
-    padding: 10px;
+    padding: 10px 0px 10px 20px;
     text-align: left;
-    color: gray;
+    color: black;
+    font-size: 1.5em;
 }
-div.post h2, div.post p{
-    padding: 10px;
+div.postBody{
+    display:flex;
+    flex-direction: column;
+}
+div.postBody p{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+}
+
+div.postIcons{
+    display: flex;
+    height: 50px;
+    font-size:xx-large;
+}
+div.postIcons div{
+    padding-left: 5px;
+}
+div.postIcons .save{
+    float:right;
+    padding-left: 450px;
 }
 div.container{
     width: 600px;
